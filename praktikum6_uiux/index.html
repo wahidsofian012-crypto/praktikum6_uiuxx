@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+
+    <!-- Judul halaman untuk menandai materi yang sedang dipelajari. -->
+    <h1>Ini belajar js</h1>
+
+    <script>
+        // Bagian 1: menyimpan data dasar dengan beberapa tipe data JavaScript.
+        const nama = "Wahid";
+        let umur = 19;
+        let nilai = 100;
+        let aktif = true;
+
+        // Menampilkan isi variabel dan tipe data nilai di konsol browser.
+        console.log("nama", nama);
+        console.log("umur", umur);
+        console.log("nilai", nilai);
+        console.log("status", aktif);
+        console.log("tipe nilai", typeof nilai);
+
+        // Bagian 2: menghitung nilai akhir dengan bobot tugas, UTS, dan UAS.
+        const tugas = 100;
+        const uts = 85;
+        const uas = 90;
+        const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+
+        // Menampilkan hasil perhitungan dan memeriksa apakah nilai mencapai 60.
+        console.log("Nilai akhir", akhir);
+        console.log("lulus", akhir >= 60);
+
+        // Bagian 3: menentukan kategori berdasarkan rentang nilai.
+        const nilai2 = 90;
+        let kategori = "A";
+
+        // Kondisi diperiksa dari nilai tertinggi ke terendah.
+        if (nilai2 >= 85) {
+            kategori = "A";
+        } else if (nilai2 >= 70) {
+            kategori = "B";
+        } else if (nilai2 >= 60) {
+            kategori = "C";
+        } else {
+            kategori = "D";
+        }
+        console.log("nilai", nilai);
+        console.log("kategori", kategori);
+
+        // Bagian 4: fungsi untuk menghitung harga setelah mendapat diskon.
+        function hitungDiskon(harga, persen) {
+            return harga - (harga * persen / 100);
+                console.log("angka", i);
+            }
+
+            // Perulangan membuat tiga contoh harga, lalu menghitung harga setelah diskon 10%.
+            for (let i = 1; i <= 3; i++) {
+                const harga = i * 100000;
+                const bayar = hitungDiskon(harga, 10);
+                console.log("barang", i, "Harga", harga, "Bayar", bayar);
+            }
+    </script>
+    </body>
+</html>
